@@ -23,6 +23,14 @@ The installer is currently unsigned. Windows may show an unknown publisher or Sm
 
 The Windows account prompt verifies the current account before opening the app. It does not encrypt diary files on disk. Diary content remains local unless you configure synchronization.
 
+## GitHub connection Skill
+
+Skill version 0.2.0 focuses on the shortest safe setup: select a diary folder
+and either create a private repository or provide an existing repository URL.
+It checks local and remote state before asking for one approval covering the
+planned writes, then verifies the connection. The Skill never displays diary
+contents or credentials and stops when repository histories conflict.
+
 ## Licenses
 
 - The ShioDiary application and its original documentation are provided for free personal, non-commercial use only. Modification, commercial use, and redistribution are not permitted. See [LICENSE](LICENSE).
